@@ -153,34 +153,17 @@ function createPlantCard(plant) {
     const categoryClass = plant.category;
 
     card.innerHTML = `
-        <img src="Image/${plant.image}" class="plant-image">
+    <img src="Image/${plant.image}" class="plant-image">
 
-        <div class="plant-header">
-            <h3 class="plant-name">${plant.name}</h3>
+    <div class="plant-header">
+        <h3 class="plant-name">${plant.name}</h3>
             <div class="plant-actions">
                 <span class="plant-category ${categoryClass}">
                     ${plant.category.toUpperCase()}
                 </span>
-
-                <button class="view-btn">View Details</button>
             </div>
-        </div>
-
-        <div class="details">
-            <p><strong>Uses:</strong> ${plant.uses}</p>
-
-            <p><strong>Pros:</strong></p>
-            ${plant.pros.map(p => `<div>✅ ${p}</div>`).join('')}
-
-            <p><strong>Cons:</strong></p>
-            ${plant.cons.map(c => `<div>❌ ${c}</div>`).join('')}
-
-            ${plant.dangerous ? 
-                `<p style="color:red;">⚠️ Highly Toxic!</p>` : ''
-            }
-        </div>
-    `;
-
+    </div>
+`;
     return card;
 }
 
@@ -205,6 +188,7 @@ function filterPlants(category) {
 
 // Initial load
 renderPlants(plantsData);
+localStorage.setItem("plantsData", JSON.stringify(plantsData));
 
 // Search
 document.getElementById('searchInput').addEventListener('input', (e) => {
@@ -225,10 +209,60 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
     renderPlants(filtered);
 });
 
-// View Details Toggle
-grid.addEventListener('click', (e) => {
-    if (e.target.classList.contains('view-btn')) {
-        const card = e.target.closest('.plant-card');
-        card.classList.toggle('active');
-    }
+window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
 });
+
+// View Details Toggle
+// Redirect to details page
+// 🔥 MODAL LOGIC
+const modal = document.getElementById("plantModal");
+const modalDetails = document.getElementById("modalDetails");
+const closeBtn = document.querySelector(".close-btn");
+
+grid.addEventListener('click', (e) => {
+    const card = e.target.closest('.plant-card');
+    if (!card) return;
+
+    const name = card.querySelector('.plant-name').innerText;
+    const plant = plantsData.find(p => p.name === name);
+
+    modalDetails.innerHTML = `
+    <div class="details-card">
+
+        <div class="details-header">
+            <h2>${plant.name}</h2>
+            <span class="plant-category ${plant.category}">
+                ${plant.category.toUpperCase()}
+            </span>
+        </div>
+
+        <p><strong>Uses:</strong> ${plant.uses}</p>
+
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            ${plant.pros.map(p => `<li>✅ ${p}</li>`).join('')}
+        </ul>
+
+        <p><strong>Drawbacks:</strong></p>
+        <ul>
+            ${plant.cons.map(c => `<li>❌ ${c}</li>`).join('')}
+        </ul>
+
+        ${plant.dangerous ? `<p style="color:red; margin-top:10px;">⚠️ Highly Toxic!</p>` : ''}
+
+    </div>
+`;
+
+    modal.classList.add("show");
+});
+
+// Close button
+closeBtn.onclick = () => modal.classList.remove("show");
+
+// Outside click close
+window.onclick = (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("show");
+    }
+};
