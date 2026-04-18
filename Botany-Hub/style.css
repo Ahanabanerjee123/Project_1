@@ -272,6 +272,10 @@ h1 {
     position: relative;
 }
 
+.modal-content {
+    color: #222;
+}
+
 .close-btn {
     position: absolute;
     top: 15px;
