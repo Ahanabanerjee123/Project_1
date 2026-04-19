@@ -162,6 +162,13 @@ h1 {
 .dangerous { background: #e74c3c; }
 .tree { background: #8e44ad; }
 .grass { background: #16a085; }
+.flower { background: #ff6f91; }
+.plant { background: #1abc9c; }
+.vegetable { background: #27ae60; }
+.indoor { background: #8e44ad; }
+.fruit { background: #f39c12; }
+.spice { background: #e67e22; /}
+.crop { background: #d4ac0d; }
 
 .plant-actions {
     display: flex;
