@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="cont_style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="contact-card">
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your Gmail" required>
+            </div>
+
+            <div class="input-group">
+                <label>Contact Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="input-group">
+                <label>Your Query</label>
+                <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="successMsg"></p>
+    </div>
+</div>
+
+<script src="cont_func.js"></script>
+</body>
+</html>
