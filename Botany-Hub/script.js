@@ -19,7 +19,7 @@ const plantsData = [
             },
             {
                 name: "Foxglove",
-                category: "dangerous",
+                category: "flower",
                 image: "Foxglove.jpg",
                 uses: "Digitalis for heart medicine (medical use only)",
                 pros: ["Heart medication source", "Attracts pollinators"],
@@ -46,7 +46,7 @@ const plantsData = [
             },
             {
                 name: "Oleander",
-                category: "dangerous",
+                category: "flower",
                 image: "Oleander.jpg",
                 uses: "Ornamental plant only",
                 pros: ["Beautiful flowers", "Drought tolerant"],
@@ -143,16 +143,6 @@ const plantsData = [
                 cons: ["Perishable", "Attracts insects", "Needs water"],
                 dangerous: false
             },
-        
-{
-    name: "Datura",
-    category: "flower",
-    image: "Datura.jpg",
-    uses: "Religious rituals, medicine (controlled)",
-    pros: ["Medicinal in small doses", "Sacred plant", "Unique flowers"],
-    cons: ["Hallucinogenic", "Highly toxic", "Can be fatal"],
-    dangerous: true
-},
 {
     name: "Castor Bean",
     category: "plant",
@@ -228,7 +218,7 @@ const plantsData = [
 {
     name: "Curry Leaves",
     category: "cooking",
-    image: "CurryLeaves.jpg",
+    image: "CurryLeaves.gif",
     uses: "Cooking, seasoning, medicinal use",
     pros: ["Improves digestion", "Rich in nutrients", "Good for hair"],
     cons: ["Strong flavor", "Limited shelf life", "Attracts insects"],
@@ -237,7 +227,7 @@ const plantsData = [
 {
     name: "Hibiscus",
     category: "flower",
-    image: "Hibiscus.jpg",
+    image: "Hibiscus.webp",
     uses: "Decoration, tea, hair care",
     pros: ["Beautiful flower", "Good for hair", "Rich in antioxidants"],
     cons: ["Needs sunlight", "Short bloom life", "Sensitive plant"],
@@ -255,7 +245,7 @@ const plantsData = [
 {
     name: "Sunflower",
     category: "flower",
-    image: "Sunflower.jpg",
+    image: "Sunflower.webp",
     uses: "Oil production, decoration, seeds",
     pros: ["Bright appearance", "Nutritious seeds", "Easy to grow"],
     cons: ["Needs sunlight", "Seasonal", "Large space required"],
@@ -264,7 +254,7 @@ const plantsData = [
 {
     name: "Coriander",
     category: "cooking",
-    image: "Coriander.jpg",
+    image: "Coriander.webp",
     uses: "Cooking, garnish, spices",
     pros: ["Rich flavor", "Good for digestion", "Widely used"],
     cons: ["Short lifespan", "Needs frequent watering", "Sensitive plant"],
@@ -273,16 +263,16 @@ const plantsData = [
 {
     name: "Spinach",
     category: "vegetable",
-    image: "Spinach.jpg",
+    image: "Spinach.webp",
     uses: "Cooking, salads",
     pros: ["Iron-rich", "Healthy", "Fast growing"],
-    cons: ["Spoils जल्दी", "Needs care", "Seasonal"],
+    cons: ["Spoils fast", "Needs care", "Seasonal"],
     dangerous: false
 },
 {
     name: "Tomato",
     category: "vegetable",
-    image: "Tomato.jpg",
+    image: "Tomato.webp",
     uses: "Cooking, sauces, salads",
     pros: ["Rich in vitamins", "Versatile", "Easy to grow"],
     cons: ["Prone to pests", "Needs support", "Seasonal"],
@@ -291,7 +281,7 @@ const plantsData = [
 {
     name: "Potato",
     category: "vegetable",
-    image: "Potato.jpg",
+    image: "Potato.jpeg",
     uses: "Cooking, chips, snacks",
     pros: ["Energy-rich", "Widely used", "Easy storage"],
     cons: ["High carbs", "Can sprout", "Overconsumption unhealthy"],
@@ -300,7 +290,7 @@ const plantsData = [
 {
     name: "Onion",
     category: "vegetable",
-    image: "Onion.jpg",
+    image: "Onion.webp",
     uses: "Cooking, salads",
     pros: ["Enhances taste", "Medicinal value", "Long shelf life"],
     cons: ["Strong smell", "Causes tears", "Can spoil"],
@@ -309,7 +299,7 @@ const plantsData = [
 {
     name: "Garlic",
     category: "cooking",
-    image: "Garlic.jpg",
+    image: "Garlic.avif",
     uses: "Cooking, medicine",
     pros: ["Boosts immunity", "Antibacterial", "Heart health"],
     cons: ["Strong odor", "Overuse causes acidity", "Taste not for all"],
@@ -318,7 +308,7 @@ const plantsData = [
 {
     name: "Chili",
     category: "vegetable",
-    image: "Chili.jpg",
+    image: "Chilli.webp",
     uses: "Cooking, spices",
     pros: ["Enhances flavor", "Boosts metabolism", "Widely used"],
     cons: ["Too spicy", "Irritates stomach", "Not for all"],
@@ -327,7 +317,7 @@ const plantsData = [
 {
     name: "Brinjal",
     category: "vegetable",
-    image: "Brinjal.jpg",
+    image: "Brinjal.webp",
     uses: "Cooking",
     pros: ["Low calories", "Rich in fiber", "Versatile"],
     cons: ["Bitter taste sometimes", "Prone to pests", "Not liked by all"],
@@ -381,7 +371,7 @@ const plantsData = [
 {
     name: "Bottle Gourd",
     category: "vegetable",
-    image: "BottleGourd.jpg",
+    image: "BottleGourd.webp",
     uses: "Cooking, juice",
     pros: ["Good for health", "Hydrating", "Easy to digest"],
     cons: ["Bland taste", "Spoils quickly", "Needs care"],
@@ -390,7 +380,7 @@ const plantsData = [
 {
     name: "Bitter Gourd",
     category: "vegetable",
-    image: "BitterGourd.jpg",
+    image: "BitterGourd.webp",
     uses: "Cooking, medicine",
     pros: ["Controls sugar", "Healthy", "Medicinal"],
     cons: ["Very bitter", "Not liked by all", "Requires cooking skill"],
@@ -399,7 +389,7 @@ const plantsData = [
 {
     name: "Snake Plant",
     category: "indoor",
-    image: "SnakePlant.jpg",
+    image: "SnakePlant.webp",
     uses: "Air purification, decoration",
     pros: ["Low maintenance", "Improves air quality", "Hardy plant"],
     cons: ["Slow growth", "Toxic to pets", "Limited decorative variety"],
@@ -453,7 +443,7 @@ const plantsData = [
 {
     name: "Papaya",
     category: "fruit",
-    image: "Papaya.jpg",
+    image: "Papaya.webp",
     uses: "Fruit, digestion aid",
     pros: ["Good for digestion", "Nutritious", "Fast growing"],
     cons: ["Soft fruit", "Short shelf life", "Sensitive plant"],
@@ -471,7 +461,7 @@ const plantsData = [
 {
     name: "Dieffenbachia",
     category: "indoor",
-    image: "Dieffenbachia.jpg",
+    image: "Dieffenbachia.webp",
     uses: "Decoration",
     pros: ["Air purifier", "Easy care", "Attractive"],
     cons: ["Causes mouth irritation", "Toxic sap", "Dangerous for pets"],
@@ -480,7 +470,7 @@ const plantsData = [
 {
     name: "Philodendron",
     category: "indoor",
-    image: "Philodendron.jpg",
+    image: "Philodendron.webp",
     uses: "Decoration",
     pros: ["Low maintenance", "Air purifier", "Popular"],
     cons: ["Toxic to pets", "Irritates skin", "Harmful if ingested"],
@@ -498,7 +488,7 @@ const plantsData = [
 {
     name: "Euphorbia",
     category: "plant",
-    image: "Euphorbia.jpg",
+    image: "Euphorbia.webp",
     uses: "Ornamental",
     pros: ["Unique appearance", "Drought tolerant", "Decorative"],
     cons: ["Toxic sap", "Causes burns", "Eye irritation"],
@@ -507,7 +497,7 @@ const plantsData = [
 {
     name: "Croton",
     category: "indoor",
-    image: "Croton.jpg",
+    image: "Croton.webp",
     uses: "Decoration",
     pros: ["Colorful leaves", "Attractive", "Indoor plant"],
     cons: ["Toxic sap", "Skin irritation", "Harmful if ingested"],
@@ -520,15 +510,6 @@ const plantsData = [
     uses: "Ornamental, medicine",
     pros: ["Evergreen", "Medicinal compounds", "Long-lived"],
     cons: ["Highly toxic", "Affects heart", "Fatal"],
-    dangerous: true
-},
-{
-    name: "Jimsonweed",
-    category: "plant",
-    image: "Jimsonweed.jpg",
-    uses: "Traditional medicine",
-    pros: ["Medicinal properties", "Hardy plant", "Fast growing"],
-    cons: ["Hallucinogenic", "Highly toxic", "Fatal"],
     dangerous: true
 },
 {
@@ -561,7 +542,7 @@ const plantsData = [
 {
     name: "Amla",
     category: "fruit",
-    image: "Amla.jpg",
+    image: "Amla.webp",
     uses: "Juice, hair care, medicine",
     pros: ["Rich in vitamin C", "Boosts immunity", "Good for hair"],
     cons: ["Very sour", "Seasonal", "Not liked by all"],
@@ -570,7 +551,7 @@ const plantsData = [
 {
     name: "Jamun",
     category: "fruit",
-    image: "Jamun.jpg",
+    image: "Jamun.webp",
     uses: "Fruit, diabetes control",
     pros: ["Controls blood sugar", "Rich in nutrients", "Tasty"],
     cons: ["Seasonal", "Stains easily", "Short shelf life"],
@@ -597,7 +578,7 @@ const plantsData = [
 {
     name: "Apple",
     category: "fruit",
-    image: "Apple.jpg",
+    image: "Apple.webp",
     uses: "Fruit, juice, desserts",
     pros: ["Healthy", "Rich in fiber", "Widely available"],
     cons: ["Can be wax-coated", "Expensive sometimes", "Needs storage"],
@@ -624,7 +605,7 @@ const plantsData = [
 {
     name: "Custard Apple",
     category: "fruit",
-    image: "CustardApple.jpg",
+    image: "CustardApple.webp",
     uses: "Fruit, sweets",
     pros: ["Delicious", "Rich in nutrients", "Healthy"],
     cons: ["Seeds not edible", "Seasonal", "Messy to eat"],
@@ -633,7 +614,7 @@ const plantsData = [
 {
     name: "Drumstick",
     category: "vegetable",
-    image: "Drumstick.jpg",
+    image: "Drumstick.avif",
     uses: "Cooking, medicine",
     pros: ["Highly nutritious", "Good for health", "Medicinal"],
     cons: ["Strong taste", "Needs cooking skill", "Seasonal"],
@@ -642,7 +623,7 @@ const plantsData = [
 {
     name: "Fenugreek",
     category: "cooking",
-    image: "Fenugreek.jpg",
+    image: "Fenugreek.avif",
     uses: "Cooking, medicine",
     pros: ["Controls sugar", "Improves digestion", "Healthy"],
     cons: ["Bitter taste", "Strong smell", "Overuse harmful"],
@@ -651,7 +632,7 @@ const plantsData = [
 {
     name: "Mustard",
     category: "cooking",
-    image: "Mustard.jpg",
+    image: "Mustard.jpeg",
     uses: "Oil, cooking, seeds",
     pros: ["Healthy oil", "Enhances taste", "Widely used"],
     cons: ["Strong flavor", "Allergy possible", "Spicy"],
@@ -660,7 +641,7 @@ const plantsData = [
 {
     name: "Sesame",
     category: "cooking",
-    image: "Sesame.jpg",
+    image: "Sesame.avif",
     uses: "Oil, seeds, sweets",
     pros: ["Rich in calcium", "Nutritious", "Good for skin"],
     cons: ["Allergy risk", "High calories", "Expensive"],
@@ -669,7 +650,7 @@ const plantsData = [
 {
     name: "Clove",
     category: "spice",
-    image: "Clove.jpg",
+    image: "Clove.webp",
     uses: "Cooking, medicine",
     pros: ["Antibacterial", "Relieves tooth pain", "Strong aroma"],
     cons: ["Too strong", "Overuse harmful", "Not for all"],
@@ -678,7 +659,7 @@ const plantsData = [
 {
     name: "Cardamom",
     category: "spice",
-    image: "Cardamom.jpg",
+    image: "Cardamom.webp",
     uses: "Cooking, tea, sweets",
     pros: ["Aromatic", "Improves digestion", "Premium spice"],
     cons: ["Expensive", "Strong flavor", "Limited use"],
@@ -687,7 +668,7 @@ const plantsData = [
 {
     name: "Black Pepper",
     category: "spice",
-    image: "BlackPepper.jpg",
+    image: "BlackPepper.webp",
     uses: "Cooking, medicine",
     pros: ["Boosts metabolism", "Improves digestion", "Widely used"],
     cons: ["Spicy", "Irritates stomach", "Overuse harmful"],
@@ -696,7 +677,7 @@ const plantsData = [
 {
     name: "Cinnamon",
     category: "spice",
-    image: "Cinnamon.jpg",
+    image: "Cinnamon.webp",
     uses: "Cooking, tea, medicine",
     pros: ["Controls sugar", "Aromatic", "Healthy"],
     cons: ["Strong taste", "Overuse harmful", "Expensive"],
@@ -714,7 +695,7 @@ const plantsData = [
 {
     name: "Ashoka",
     category: "tree",
-    image: "Ashoka.jpg",
+    image: "Ashoka.webp",
     uses: "Decoration, medicine",
     pros: ["Beautiful", "Medicinal value", "Sacred"],
     cons: ["Needs space", "Slow growth", "Maintenance needed"],
@@ -723,7 +704,7 @@ const plantsData = [
 {
     name: "Teak",
     category: "tree",
-    image: "Teak.jpg",
+    image: "Teak.webp",
     uses: "Wood, furniture",
     pros: ["Strong wood", "Durable", "High value"],
     cons: ["Slow growth", "Expensive", "Needs space"],
@@ -768,7 +749,7 @@ const plantsData = [
 {
     name: "Spider Plant",
     category: "indoor",
-    image: "SpiderPlant.jpg",
+    image: "SpiderPlant.webp",
     uses: "Decoration, air purification",
     pros: ["Easy care", "Pet-friendly", "Fast growing"],
     cons: ["Needs trimming", "Can overgrow", "Sensitive tips"],
@@ -777,19 +758,10 @@ const plantsData = [
 {
     name: "Chrysanthemum",
     category: "flower",
-    image: "Chrysanthemum.jpg",
+    image: "Chrysanthemum.webp",
     uses: "Decoration, tea",
     pros: ["Colorful", "Aesthetic", "Medicinal tea"],
     cons: ["Seasonal", "Needs care", "Pest-prone"],
-    dangerous: false
-},
-{
-    name: "Lotus Stem",
-    category: "vegetable",
-    image: "LotusStem.jpg",
-    uses: "Cooking",
-    pros: ["Nutritious", "Crunchy texture", "Unique taste"],
-    cons: ["Hard to clean", "Seasonal", "Limited availability"],
     dangerous: false
 },
 {
@@ -849,7 +821,7 @@ const plantsData = [
 {
     name: "Cerbera Odollam",
     category: "tree",
-    image: "CerberaOdollam.jpg",
+    image: "CerberaOdollam.webp",
     uses: "None (toxic)",
     pros: ["Coastal tree", "Hardy", "Natural growth"],
     cons: ["Suicide tree toxin", "Highly poisonous", "Fatal"],
@@ -858,7 +830,7 @@ const plantsData = [
 {
     name: "Strychnine Tree",
     category: "tree",
-    image: "StrychnineTree.jpg",
+    image: "StrychnineTree.jpeg",
     uses: "Medicine (controlled)",
     pros: ["Medicinal alkaloids", "Hardy", "Historical use"],
     cons: ["Highly toxic", "Causes convulsions", "Fatal"],
@@ -867,7 +839,7 @@ const plantsData = [
 {
     name: "Rhododendron",
     category: "flower",
-    image: "Rhododendron.jpg",
+    image: "Rhododendron.webp",
     uses: "Ornamental",
     pros: ["Beautiful flowers", "Decorative", "Hardy"],
     cons: ["Toxic nectar", "Poisonous leaves", "Harmful if eaten"],
@@ -903,7 +875,7 @@ const plantsData = [
 {
     name: "Indian Snakeroot",
     category: "medicinal",
-    image: "IndianSnakeroot.jpg",
+    image: "IndianSnakeroot.jpeg",
     uses: "Medicine",
     pros: ["Medicinal value", "Used in Ayurveda", "Effective"],
     cons: ["Toxic in excess", "Side effects", "Requires caution"],
@@ -912,7 +884,7 @@ const plantsData = [
 {
     name: "Jackfruit",
     category: "fruit",
-    image: "Jackfruit.jpg",
+    image: "Jackfruit.jpeg",
     uses: "Fruit, cooking, sweets",
     pros: ["High nutrition", "Large yield", "Versatile"],
     cons: ["Sticky latex", "Strong smell", "Large size"],
@@ -984,34 +956,16 @@ const plantsData = [
 {
     name: "Dragon Fruit",
     category: "fruit",
-    image: "DragonFruit.jpg",
+    image: "DragonFruit.webp",
     uses: "Fruit, desserts",
     pros: ["Exotic", "Low calorie", "Rich in antioxidants"],
     cons: ["Expensive", "Mild taste", "Limited availability"],
     dangerous: false
 },
 {
-    name: "Mint Basil",
-    category: "cooking",
-    image: "MintBasil.jpg",
-    uses: "Cooking, herbal drinks",
-    pros: ["Refreshing", "Aromatic", "Easy to grow"],
-    cons: ["Needs trimming", "Spreads fast", "Short lifespan"],
-    dangerous: false
-},
-{
-    name: "Parsley",
-    category: "cooking",
-    image: "Parsley.jpg",
-    uses: "Garnish, cooking",
-    pros: ["Rich in vitamins", "Fresh flavor", "Healthy"],
-    cons: ["Short shelf life", "Needs care", "Not common everywhere"],
-    dangerous: false
-},
-{
     name: "Dill",
     category: "cooking",
-    image: "Dill.jpg",
+    image: "Dill.webp",
     uses: "Cooking, pickles",
     pros: ["Aromatic", "Aids digestion", "Healthy"],
     cons: ["Strong flavor", "Short life", "Seasonal"],
@@ -1020,7 +974,7 @@ const plantsData = [
 {
     name: "Oregano",
     category: "cooking",
-    image: "Oregano.jpg",
+    image: "Oregano.webp",
     uses: "Cooking, seasoning",
     pros: ["Aromatic", "Antioxidant rich", "Popular herb"],
     cons: ["Strong taste", "Limited Indian use", "Expensive"],
@@ -1038,7 +992,7 @@ const plantsData = [
 {
     name: "Sage",
     category: "cooking",
-    image: "Sage.jpg",
+    image: "Sage.webp",
     uses: "Cooking, medicine",
     pros: ["Medicinal", "Aromatic", "Antioxidant"],
     cons: ["Strong taste", "Overuse harmful", "Rare"],
@@ -1056,7 +1010,7 @@ const plantsData = [
 {
     name: "Vetiver",
     category: "grass",
-    image: "Vetiver.jpg",
+    image: "Vetiver.avif",
     uses: "Perfume, cooling mats",
     pros: ["Cooling effect", "Fragrant", "Soil binding"],
     cons: ["Limited use", "Needs care", "Not edible"],
@@ -1065,7 +1019,7 @@ const plantsData = [
 {
     name: "Sugarcane",
     category: "crop",
-    image: "Sugarcane.jpg",
+    image: "Sugarcane.webp",
     uses: "Juice, sugar production",
     pros: ["Energy-rich", "Widely used", "Profitable crop"],
     cons: ["High water need", "Hard to chew", "Seasonal"],
@@ -1083,7 +1037,7 @@ const plantsData = [
 {
     name: "Rice",
     category: "crop",
-    image: "Rice.jpg",
+    image: "Rice.webp",
     uses: "Staple food",
     pros: ["Main food", "Energy-rich", "Widely available"],
     cons: ["High carbs", "Needs water", "Flood cultivation"],
@@ -1092,7 +1046,7 @@ const plantsData = [
 {
     name: "Barley",
     category: "crop",
-    image: "Barley.jpg",
+    image: "Barley.webp",
     uses: "Food, beverages",
     pros: ["Healthy grain", "High fiber", "Versatile"],
     cons: ["Limited use", "Processing needed", "Seasonal"],
@@ -1101,7 +1055,7 @@ const plantsData = [
 {
     name: "Maize",
     category: "crop",
-    image: "Maize.jpg",
+    image: "Maize.webp",
     uses: "Food, snacks",
     pros: ["Versatile", "Energy-rich", "Widely grown"],
     cons: ["High carbs", "Needs space", "Seasonal"],
@@ -1128,7 +1082,7 @@ const plantsData = [
 {
     name: "Flax",
     category: "crop",
-    image: "Flax.jpg",
+    image: "Flax.webp",
     uses: "Fiber, seeds",
     pros: ["Healthy seeds", "Fiber source", "Versatile"],
     cons: ["Limited cultivation", "Processing needed", "Seasonal"],
@@ -1182,7 +1136,7 @@ const plantsData = [
 {
     name: "Kalonji",
     category: "spice",
-    image: "Kalonji.jpg",
+    image: "Kalonji.webp",
     uses: "Cooking, medicine",
     pros: ["Boosts immunity", "Aromatic", "Medicinal"],
     cons: ["Strong taste", "Overuse harmful", "Not for all"],
@@ -1191,7 +1145,7 @@ const plantsData = [
 {
     name: "Ajwain",
     category: "spice",
-    image: "Ajwain.jpg",
+    image: "Ajwain.webp",
     uses: "Cooking, digestion remedy",
     pros: ["Aids digestion", "Strong flavor", "Medicinal"],
     cons: ["Too strong", "Overuse harmful", "Limited use"],
@@ -1218,7 +1172,7 @@ const plantsData = [
 {
     name: "Star Anise",
     category: "spice",
-    image: "StarAnise.jpg",
+    image: "StarAnise.webp",
     uses: "Cooking, tea",
     pros: ["Aromatic", "Medicinal", "Unique flavor"],
     cons: ["Strong taste", "Limited use", "Expensive"],
@@ -1227,7 +1181,7 @@ const plantsData = [
 {
     name: "Nutmeg",
     category: "spice",
-    image: "Nutmeg.jpg",
+    image: "Nutmeg.webp",
     uses: "Cooking, medicine",
     pros: ["Aromatic", "Medicinal", "Enhances flavor"],
     cons: ["Toxic in excess", "Strong taste", "Expensive"],
@@ -1245,7 +1199,7 @@ const plantsData = [
 {
     name: "Betel Leaf",
     category: "plant",
-    image: "BetelLeaf.jpg",
+    image: "BetelLeaf.webp",
     uses: "Chewing, rituals, medicine",
     pros: ["Digestive", "Cultural use", "Medicinal"],
     cons: ["Addictive when combined", "Strong taste", "Not for all"],
@@ -1254,7 +1208,7 @@ const plantsData = [
 {
     name: "Curry Plant",
     category: "plant",
-    image: "CurryPlant.jpg",
+    image: "CurryLeaf.webp",
     uses: "Decoration, aroma",
     pros: ["Fragrant", "Attractive", "Easy care"],
     cons: ["Not edible like curry leaves", "Limited use", "Rare"],
@@ -1263,7 +1217,7 @@ const plantsData = [
 {
     name: "Kesar Mango",
     category: "fruit",
-    image: "KesarMango.jpg",
+    image: "KesarMango.webp",
     uses: "Fruit, desserts",
     pros: ["Sweet taste", "Premium quality", "Rich flavor"],
     cons: ["Seasonal", "Expensive", "Perishable"],
@@ -1308,7 +1262,7 @@ const plantsData = [
 {
     name: "Arjun Tree",
     category: "tree",
-    image: "Arjun.jpg",
+    image: "ArjunTree.webp",
     uses: "Heart medicine, shade",
     pros: ["Medicinal bark", "Strong tree", "Long lifespan"],
     cons: ["Needs space", "Slow growth", "Limited use"],
@@ -1317,7 +1271,7 @@ const plantsData = [
 {
     name: "Sal Tree",
     category: "tree",
-    image: "Sal.jpg",
+    image: "SalTree.jpg",
     uses: "Wood, resin",
     pros: ["Strong wood", "Long lasting", "Widely used"],
     cons: ["Slow growth", "Needs forest area", "Heavy"],
@@ -1326,7 +1280,7 @@ const plantsData = [
 {
     name: "Palash",
     category: "tree",
-    image: "Palash.jpg",
+    image: "PalashTree.webp",
     uses: "Dye, decoration",
     pros: ["Bright flowers", "Cultural value", "Medicinal"],
     cons: ["Seasonal", "Short bloom", "Needs space"],
@@ -1335,7 +1289,7 @@ const plantsData = [
 {
     name: "Mahua",
     category: "tree",
-    image: "Mahua.jpg",
+    image: "MahuaTree.jpg",
     uses: "Oil, food, traditional drinks",
     pros: ["Multiple uses", "Nutritious", "Traditional importance"],
     cons: ["Strong smell", "Limited region", "Seasonal"],
@@ -1344,7 +1298,7 @@ const plantsData = [
 {
     name: "Tendu",
     category: "tree",
-    image: "Tendu.jpg",
+    image: "Tendu.webp",
     uses: "Leaves for bidi, fruit",
     pros: ["Economic value", "Useful leaves", "Hardy"],
     cons: ["Limited use", "Regional", "Not widely edible"],
@@ -1353,7 +1307,7 @@ const plantsData = [
 {
     name: "Khejri",
     category: "tree",
-    image: "Khejri.jpg",
+    image: "Khejri.webp",
     uses: "Fodder, desert farming",
     pros: ["Drought resistant", "Supports soil", "Hardy"],
     cons: ["Slow growth", "Limited regions", "Needs space"],
@@ -1380,7 +1334,7 @@ const plantsData = [
 {
     name: "Parijat",
     category: "flower",
-    image: "Parijat.jpg",
+    image: "Parijat.avif",
     uses: "Decoration, religious use",
     pros: ["Fragrant", "Sacred", "Beautiful"],
     cons: ["Short lifespan", "Seasonal", "Delicate"],
@@ -1389,7 +1343,7 @@ const plantsData = [
 {
     name: "Rajnigandha",
     category: "flower",
-    image: "Rajnigandha.jpg",
+    image: "Rajnigandha.webp",
     uses: "Perfume, decoration",
     pros: ["Strong fragrance", "Aesthetic", "Popular"],
     cons: ["Needs care", "Seasonal", "Sensitive"],
@@ -1407,7 +1361,7 @@ const plantsData = [
 {
     name: "Cosmos",
     category: "flower",
-    image: "Cosmos.jpg",
+    image: "Cosmos.webp",
     uses: "Decoration",
     pros: ["Easy to grow", "Bright colors", "Low maintenance"],
     cons: ["Seasonal", "Delicate", "Short life"],
@@ -1416,7 +1370,7 @@ const plantsData = [
 {
     name: "Balsam",
     category: "flower",
-    image: "Balsam.jpg",
+    image: "Balsam.webp",
     uses: "Decoration",
     pros: ["Fast growing", "Colorful", "Easy care"],
     cons: ["Seasonal", "Short lifespan", "Sensitive"],
@@ -1434,10 +1388,19 @@ const plantsData = [
 {
     name: "Ixora",
     category: "flower",
-    image: "Ixora.jpg",
+    image: "Ixora.webp",
     uses: "Decoration",
     pros: ["Evergreen", "Bright clusters", "Garden plant"],
     cons: ["Needs warm climate", "Sensitive", "Slow growth"],
+    dangerous: false
+},
+{
+    name: "Pitcher Plant",
+    category: "carnivorous",
+    image: "PitcherPlant.avif",
+    uses: "Insect control, research, decoration",
+    pros: ["Carnivorous (eats insects)", "Unique appearance", "Natural pest control"],
+    cons: ["Needs humid environment", "Slow growth", "Requires special care"],
     dangerous: false
 }
         ];
