@@ -1,0 +1,109 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 10px;
+}
+
+/* Card */
+.contact-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading */
+.contact-card h2 {
+    margin-bottom: 20px;
+    color: #1f4037;
+    font-weight: 600;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Inputs */
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+/* Focus Effect */
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #1f4037;
+    box-shadow: 0 0 8px rgba(31, 64, 55, 0.3);
+}
+
+/* Textarea */
+.input-group textarea {
+    resize: none;
+    height: 130px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #1f4037, #4ca1af);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #4ca1af, #1f4037);
+}
+
+/* Success / Error Message */
+#successMsg {
+    margin-top: 15px;
+    font-size: 14px;
+    transition: opacity 0.4s ease;
+}
